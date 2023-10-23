@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="AddrMapper">
+
+	<!-- 해당 sql을 메서드와 연결해서 처리. id는 메서드명, resultType 리턴, parameterType 매개변수 -->
+
+<!--	public ArrayList<Addr> getAddresses();-->
+<!--	resultType에 들어가는 Addr은 만들어두었던 클래스-->
+<!--	Addr에서 필요한 결과를 꺼내옴-->
+	<select id="getAddresses" resultType="Addr">
+      SELECT *
+      FROM t_address
+    </select>
+
+<!--	public void insertAddress(Addr addr);-->
+
+<!--	parameterType은 총 한개이므로 클래스 전체를 가져와 사용-->
+    <insert id="insertAddress" parameterType="Addr" >
+    	INSERT INTO t_address
+    	SET `name` = #{name},
+    	address = #{address},
+    	phone = #{phone}
+    </insert >
+<!--	public void updateAddress(Addr addr);-->
+  	<update id="updateAddress" parameterType="Addr">
+  		UPDATE t_address
+  		SET `name` = #{name},
+    	address = #{address},
+    	phone = #{phone}
+    	WHERE id = #{id}
+  	</update>
+<!--	public void deleteAddress(int id); 삭제 명령에는 id만 있으면 됨-->
+  	<delete id="deleteAddress" parameterType="int">
+  		DELETE FROM t_address
+  		WHERE id = #{id}
+  	</delete>
+  
+</mapper>
