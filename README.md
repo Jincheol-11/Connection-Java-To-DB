@@ -17,6 +17,11 @@
 
 ### 사용 언어
 
+<p align="left"> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> &nbsp;&nbsp;&nbsp;
+<a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40" height="40"/> </a> </p> &nbsp;&nbsp;&nbsp;
+<a href="https://mybatis.org/" target="_blank" rel="noreferrer"> <img src="https://t1.daumcdn.net/cfile/tistory/9961453359A449F403 alt="mybatis" width="40" height="40"/> </a> </p>
+
+
 - Java
 - MySQL
 - MyBatis
